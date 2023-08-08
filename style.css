@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #5E548E; 
+    height: 5rem;
+    display: flex; /*centralizar o elemento */
+    justify-content: center;
+    align-items: center;
+}
+
+header a{ /*especificando que a estilização será apenas do a do header*/
+    color: white;
+    text-decoration: none; /*para tirar sublinhado*/
+    text-transform: uppercase;  /*deixar tudo maiusculo*/
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    
+}
+/*1 rem e 16px, o rem se adapta a fonte do navegador e a tela, deixando uniforme, o rem aumenta proporcionalmente, os pxs é fixo*/
+
+header a:hover{ /*ao passar o mouser por cima*/
+    text-decoration: underline;
+    color: #9F86C0;
+    transform: scale(1.1); /*aumentar a ketra*/
+    transition: transform .5s; /*controlar a velocidade*/
+}
+
+nav{
+    display: flex;
+    gap: 7rem ; /*separar as palavras da frase*/
+
+}
